@@ -23,7 +23,7 @@ check s2_myheight aapt R.java
 
 # aapt2 just picks one declaration.
 $AAPT2 compile -o res1.flata --dir res1
-$AAPT2 compile -o res2.flata --dir res1
+$AAPT2 compile -o res2.flata --dir res2
 $AAPT2 link --auto-add-overlay -o aapt2.ap_ --manifest AndroidManifest.xml  -R res1.flata -R res2.flata --java r-dot/aapt2
 $AAPT dump --values resources aapt2.ap_ > aapt2.txt
 check mywidth aapt2 com/example/R.java
