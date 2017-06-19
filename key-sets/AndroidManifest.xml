@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example">
+  <application/>
+
+  <key-sets>
+    <key-set android:name="keyset-old">
+      <public-key
+          android:name="key-old"
+          android:value="bleep+blorp/I+am+the+old+key" />
+    </key-set>
+
+    <key-set android:name="keyset-2017" >
+      <public-key
+          android:name="key-2017"
+          android:value="bleep+blorp/I+am+the+new+key" />
+    </key-set>
+
+    <upgrade-key-set android:name="keyset-old"/>
+    <upgrade-key-set android:name="keyset-2017"/>
+  </key-sets>
+ </manifest>
