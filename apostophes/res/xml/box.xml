@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<container>
+  <thing text="I'm corrugated." />
+  <thing text="I thought you weren't corrugated." />
+</container>
